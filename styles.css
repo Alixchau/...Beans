@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #105652;
+  --color-primary-variant: #fbf3e4;
+  --color-black: #000000;
+  --color-dark: #3a3845;
+  --color-red: #b91646;
+  --color-white: #fff;
+  --color-light: #dfd8ca;
+
+  --width: 85%;
+  --mobile-width: 92%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}
+
+.container {
+  width: var(--width);
+  margin: 0px auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color-dark);
+  font-family: "Roboto Slab", serif;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  line-height: 0.8;
+}
+
+h2 {
+  font-size: 3.2rem;
+  letter-spacing: -0.2rem;
+}
+
+/* Nav bar */
+nav {
+  width: 100vw;
+  height: 6rem;
+  position: fixed;
+  z-index: 2;
+}
+
+nav button {
+  display: none;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .container ul li {
+  padding: 20px 15px;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+nav .navIcons {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav .navIcon {
+  padding: 7px;
+}
+
+/* header */
+header .container {
+  display: flex;
+  flex-direction: row; 
+}
+
+header .headerItem {
+  overflow: hidden;
+  position: relative;
+  top: 6rem;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+}
+
+header .headerItem .info {
+  width: 50vw;
+  text-align: center;
+  padding: 30px;
+
+}
+
+header .headerItem .info h1 {
+  line-height: 100%;
+  margin-bottom: 1rem;
+  animation-name: dropin;
+  animation-duration: 2s;
+}
+
+@keyframes dropin {
+  from {
+    margin-top: -70%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+header .headerItem img {
+  clip-path: circle(50% at 50% 50%);
+  width: 33vw;
+  height: auto;
+  margin: 20px 30px 10px 10px;
+}
+
+
