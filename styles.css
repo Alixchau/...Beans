@@ -84,7 +84,10 @@ nav .container {
   align-items: center;
   justify-content: space-between;
 }
-
+#logo{
+  font-weight: bolder;
+  color: var(--primary-color);
+}
 nav .container ul {
   display: flex;
   align-items: center;
@@ -100,6 +103,7 @@ nav a {
 }
 nav a:hover {
   color: var(--primary-color);
+  text-decoration: underline;
 }
 
 nav .navIcons {
@@ -143,6 +147,11 @@ header .headerItem .info h1 {
   margin-bottom: 1rem;
   animation-name: dropin;
   animation-duration: 2s;
+}
+
+header .headerItem .headerImage:hover{
+  transform: rotate(90deg);
+  transition: transform 3s ease-in;
 }
 
 @keyframes dropin {
@@ -262,7 +271,6 @@ video {
 .swiper{
   width: var(--width);
   height: 100%;
-  margin-top: 3rem;
 }
 
 .swiper-wrapper{
@@ -270,11 +278,9 @@ video {
 }
 
 .swiper-slide{
-
   display: flex;
   align-items: center;
   gap:5rem;
-
 }
 
 .swiper-slide img {
@@ -285,10 +291,6 @@ video {
 }
 .swiper-slide .details {
   margin-right: 10rem;
-}
-.swiper-slide .details h3{
-margin: 1rem 0;
-
 }
 
 .swiper-slide .details h4{
@@ -382,10 +384,15 @@ height: 100%;
 margin-right: 0.3rem;
 }
 
+footer .container .f1 .subscribe button:hover{
+cursor: pointer;
+}
+
 footer .container .f1 .subscribe img{
   width: 1.3rem;
   height: 100%;
 }
+
 
 footer .container ul li{
   margin-bottom: 0.5rem;
@@ -418,4 +425,83 @@ footer .copyright{
   margin-top: 4rem;
   padding-bottom: 1rem;
   background:var(--color-primary-variant);
+}
+
+/* Media Queries (Tablets) */
+@media screen and (max-width:1024px) {
+  h1{
+    font-size: 3.5rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.2rem;
+  }
+  h4{
+    font-size: 1rem;
+  }
+  h5{
+    font-size: 0.8rem
+  }
+  p{
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+  }
+  .container{
+    width: var(--mobile-width);
+  }
+/* Navbar */
+  nav .container{
+    width: 100%;
+  }
+  nav #logo{
+    margin-left: 2rem;
+
+  }
+  nav .container ul{
+    position: fixed;
+    top: -1rem;
+    left: 0;
+    flex-direction: column;
+    width: 16rem;
+    height:50vh;
+    background: var(--primary-color);
+    box-shadow:  1rem 0 2rem rgba(0, 0, 0, 0.2);
+    z-index: 2;
+   display: none;
+  }
+  nav .container ul li{
+    height: 4.9rem;
+    display: flex;
+    align-items:center;
+  }
+  nav .container ul li a{
+   color: var(--color-white);
+    width: 100%;
+  }
+  nav .navIcons {
+    height: 35px;
+    width: 10rem;
+  }
+  nav .navIcons .navIcon{
+    width: 35px;
+    margin-right: 2.5rem;
+  }
+  nav button{
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    margin-right: 2rem;
+  }
+  nav button#clostBtn{
+    display: none;
+  }
+
+  .swiper-slide img {
+    margin-left: 5rem;
+  }
+  .swiper-slide .details {
+    margin-right: 5rem;
+  }
 }
