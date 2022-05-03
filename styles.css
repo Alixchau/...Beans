@@ -199,10 +199,6 @@ video {
   padding: 0 2rem 0 0;
 }
 
-.container.section.product:nth-child(2) .productInfo  {
-  padding: 0 0 0 2rem;
-}
-
 .container.section.product h3 {
   margin-bottom: 1rem;
 }
@@ -266,7 +262,7 @@ video {
 /* Testimonial section */
 .testimonial-section-header{
   text-align: center;
-  margin: 5rem 0;
+  margin: 5rem 0 2.5rem;
 }
 .swiper{
   width: var(--width);
@@ -274,7 +270,7 @@ video {
 }
 
 .swiper-wrapper{
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .swiper-slide{
@@ -302,7 +298,7 @@ video {
 /* FAQ section */
 .faqs h2{
   text-align: center;
-  margin: 5rem 0;
+  margin: 4rem 0 2.5rem;
 }
 
 .faqs .content{
@@ -452,6 +448,7 @@ footer .copyright{
     width: var(--mobile-width);
   }
 /* Navbar */
+
   nav .container{
     width: 100%;
   }
@@ -461,7 +458,7 @@ footer .copyright{
   }
   nav .container ul{
     position: fixed;
-    top: -1rem;
+    top: 0;
     left: 0;
     flex-direction: column;
     width: 16rem;
@@ -504,4 +501,86 @@ footer .copyright{
   .swiper-slide .details {
     margin-right: 5rem;
   }
+  footer .container{
+    grid-template-columns: 1fr 1fr;
+  }
 }
+  /* Media queries(Mobile Phones) */
+  @media screen and (max-width:600px) {
+    h1{
+      font-size: 1.7rem;
+    }
+    h2{
+      font-size: 1.3rem;
+    }
+    h3{
+      font-size: 1rem;
+    }
+    h4{
+      font-size: 0.7rem;
+    }
+    h5{
+      font-size: 0.7rem;
+    }
+    p{
+      font-size: 0.8rem;
+    }
+    section{
+      padding-top: 5rem;
+    }
+
+    /* Navbar */
+    nav {
+      width: 100%;
+      height: 4rem;
+      display: grid;
+      position: fixed;
+    }
+    nav .navIcons {
+      height: 35px;
+      width: 7rem;
+    }
+    nav .navIcons .navIcon{
+      width: 35px;
+      margin-right: 1rem;
+    }
+     /* Header */
+    header .headerItem {
+      top: 5rem;
+    }
+    /* Video */
+    .container.section.video {
+      margin-top: 0rem;
+    }
+    video {
+      width: var(--width);
+    }
+    .container.section.product {
+      width: var(--width);
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0 0;
+      align-items: center;
+    }
+    .swiper-slide{
+      gap: 0.5rem;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .swiper-slide img {
+      margin:auto;
+    }
+    .swiper-slide .details {
+      margin:0 3rem 0;
+    }
+
+    footer .container{
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      text-align: center;
+    }
+    footer .socialMedia{
+      justify-content: center;
+    }
+  }
