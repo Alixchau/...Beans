@@ -179,14 +179,21 @@ video {
 
 /* product section */
 .container.section.product {
-  width: 60%;
+  width: var(--width);
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 6rem 0 0;
+  align-items: center;
 }
-.container.section.product .productInfo{
-  padding: 0 2rem;
+
+.container.section.product .productInfo {
+  padding: 0 2rem 0 0;
 }
+
+.container.section.product:nth-child(2) .productInfo  {
+  padding: 0 0 0 2rem;
+}
+
 .container.section.product h3 {
   margin-bottom: 1rem;
 }
@@ -206,7 +213,7 @@ video {
   transition: transform 1s ease-out;
 }
 
-.container.section.product img:hover{
+.container.section.product img:hover {
   transform: scale(1.1);
 }
 
@@ -222,7 +229,7 @@ video {
   border-radius: 10px;
 }
 
-.container.section.product .weightSelect button:hover{
+.container.section.product .weightSelect button:hover {
   background-color: var(--primary-color);
   color: var(--color-primary-variant);
 }
@@ -245,4 +252,170 @@ video {
 .addToCartBtn:hover {
   background-color: var(--color-light);
   color: var(--primary-color);
+}
+
+/* Testimonial section */
+.testimonial-section-header{
+  text-align: center;
+  margin: 5rem 0;
+}
+.swiper{
+  width: var(--width);
+  height: 100%;
+  margin-top: 3rem;
+}
+
+.swiper-wrapper{
+  margin-bottom: 3rem;
+}
+
+.swiper-slide{
+
+  display: flex;
+  align-items: center;
+  gap:5rem;
+
+}
+
+.swiper-slide img {
+  width: 5rem;
+  height: 5rem;
+  margin-left: 10rem;
+  border-radius: 50%;
+}
+.swiper-slide .details {
+  margin-right: 10rem;
+}
+.swiper-slide .details h3{
+margin: 1rem 0;
+
+}
+
+.swiper-slide .details h4{
+  color: var(--color-dark);
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* FAQ section */
+.faqs h2{
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.faqs .content{
+  display: grid;
+  gap: 1rem
+}
+
+.faqs .content .expand{
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  gap:1.5rem;
+  height: fit-content;
+  background: var(--color-primary-variant);
+  cursor: pointer;
+  ;
+}
+
+
+.faqs .content .expand .icon img{
+  color: var(--color-dark);
+  padding: 0%;
+  margin-bottom: auto;
+}
+
+.faqs .content .expand p{ 
+  padding-top: 1rem;
+  display: none;
+}
+
+
+.faqs a.btn{
+  display: block;
+  margin: 0 auto;
+  width: 12rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Footer section */
+footer{
+  background: var(--color-primary-variant);
+  margin-top: 7rem;
+  padding-top: 5rem;
+  font-size: 0.7rem;
+  color: var(--color-dark);
+}
+
+footer .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5rem;
+  justify-content: space-between;
+}
+
+footer .container p, ul{
+  margin: 1rem 0 1rem;
+}
+
+footer .container .f1 .subscribe{
+  border: 1px solid var(--primary-color);
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.5rem;
+}
+
+footer .container .f1 .subscribe input{
+background: transparent;
+color: var(--color-dark);
+margin-left: 0.3rem;
+}
+
+footer .container .f1 .subscribe button{
+background-color: transparent;
+width: 1.5rem;
+height: 100%;
+margin-right: 0.3rem;
+}
+
+footer .container .f1 .subscribe img{
+  width: 1.3rem;
+  height: 100%;
+}
+
+footer .container ul li{
+  margin-bottom: 0.5rem;
+}
+
+footer .container ul li a{
+color: var(--color-dark);
+}
+
+footer .container ul li a:hover{
+color: var(--primary-color);
+text-decoration: underline;
+}
+
+
+footer .container .socialMedia{
+  display: flex;
+  gap: 1rem;
+}
+
+footer .container .f4 .socialMedia li img{
+  width: 1rem;
+  height: auto;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+footer .copyright{
+  text-align: center;
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+  background:var(--color-primary-variant);
 }
