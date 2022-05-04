@@ -48,7 +48,7 @@ navItems.forEach(item =>{
 })
 
 //show and hide faqs
-const faqs = document.querySelectorAll(".faqs article");
+const faqs = document.querySelectorAll("#faqs article");
 
 faqs.forEach(faq =>{
   faq.addEventListener("click", ()=>{
