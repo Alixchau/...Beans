@@ -100,6 +100,7 @@ nav .container ul {
   justify-content: space-between;
 }
 
+
 nav .container ul li {
   padding: 0px 15px;
 }
@@ -123,6 +124,25 @@ nav .navIcons {
 
 nav .navIcon {
   padding: 7px;
+}
+/* .checkBtn{
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: block;
+} */
+.burger div{
+  width: 20px;
+  height: 2px;
+  background-color: var(--color-dark);
+  margin: 4px;
+  transition: all 0.4s ease;
+}
+.burger{
+  display: none;
+  margin-right: 3rem;
+  cursor: pointer;
 }
 
 /* header */
@@ -509,27 +529,73 @@ footer .copyright{
     margin-left: 2rem;
 
   }
+/*   .checkBtn{
+    display: block;
+  } */
+/*   body{
+    overflow-x: hidden;
+  } */
   nav .container ul{
-    position: fixed;
+    position: absolute;
     top: 3rem;
-    right: 0;
+    right: 0px;
     flex-direction: column;
+    align-items: center;
     width: 13rem;
     height:100vh;
     background: var(--primary-color);
-    box-shadow:  1rem 0 2rem rgba(0, 0, 0, 0.2);
     z-index: 2;
-   display: none;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in; 
   }
+
+   nav .container ul.navActive{  
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in; 
+  } 
+
   nav .container ul li{
-    height: 4rem;
-    display: flex;
-    align-items:center;
+    padding: 0 0 7rem;
+    margin: auto;
+    opacity: 0;
   }
   nav .container ul li a{
    color: var(--color-white);
     width: 100%;
+    flex-direction: column;
+    display: flex;
+
+    animation-name: navLinkFade;
+    animation-duration: 0.5s;
   }
+  .burger{
+    display: block;
+  }
+
+  @keyframes navLinkFade {
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .burger.toggle .line1{
+    transform: translate(-5px, 6px) rotate(45deg);
+  }
+  .burger.toggle .line2{
+    opacity: 0;
+  }
+  .burger.toggle .line3{
+  transform: translate(-5px, -6px) rotate(-45deg);
+  }
+/*   nav .container ul li a:hover{
+    transform: translateX(3%);
+    transition: transform 0.3s ease-out;
+  } */
   nav .navIcons {
     height: 35px;
     width: 10rem;
@@ -538,7 +604,7 @@ footer .copyright{
     width: 35px;
     margin-right: 2.5rem;
   }
-  nav button{
+/*   nav button{
     display: inline-block;
     cursor: pointer;
     background: transparent;
@@ -546,7 +612,7 @@ footer .copyright{
   }
   nav button#closeBtn{
     display: none;
-  }
+  } */
 
   .swiper-slide img {
     margin-left: 5rem;
@@ -659,5 +725,15 @@ footer .copyright{
     }
     footer .socialMedia{
       justify-content: center;
+    }
+  }
+
+  @keyframes navOpen {
+    from{
+     right: 0px;
+    }
+    to{
+
+      right: -100%;
     }
   }

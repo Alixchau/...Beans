@@ -19,12 +19,12 @@
 
 </head>
 <body>
-  <div class="app">
+  <main class="app">
   <nav id="nav">
     <div class="container" >
       <a href="index.html" id="logo">...Beans</a>
 
-      <ul>
+      <ul >
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="#products">Products</a></li>
         <li><a href="#faqs">FAQs</a></li>
@@ -36,9 +36,17 @@
         <img class="navIcon" src="./images/shopping-cart.svg" />
         <img class="navIcon" src="./images/user.svg" />
       </div>
-
+<!-- 
       <button id="menuBtn"><img src="./images/menu.svg"/></button>
-      <button id="closeBtn"><img src="./images/close.svg"/></button>
+      <button id="closeBtn"><img src="./images/close.svg"/></button> -->
+
+<!--       <input type="checkbox" id="check">
+      <label for="check" id="checkBtn"><img src="./images/menu.svg"/></label> -->
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
   </div>
   </nav>
 
@@ -66,12 +74,12 @@
       <p class="featureDesc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
   </div>
   <div class="feature">
-      <img class="featureIcon" src="./images/return.png">
+      <img class="featureIcon" src="./images/return-delivery.svg">
       <p class="featureTitle">RETURN</p>
       <p class="featureDesc">Lorem ipsum dolor sit ametsit amet consectetur.</p>
   </div>
   <div class="feature">
-      <img class="featureIcon" src="./images/gift.png">
+      <img class="featureIcon" src="./images/star.svg">
       <p class="featureTitle">SHOP WITH POINTS</p>
       <p class="featureDesc">Lorem ipsum dolor sit amet consectetur.</p>
   </div>
@@ -197,7 +205,7 @@
 </div>
 
 <!-- FAQ section -->
-<div id="faqs" data-scene>
+<div id="faqs" data-scene   data-aos-offset="0">
   <div class="container">
     <h2 data-aos="zoom-out-down">Frequently Asked Questions</h2>
     <div class="content" data-aos="fade-up">
@@ -252,10 +260,11 @@
   </div>
 </div>
 
+
 <!-- Footer section -->
 
-<footer id="contactUs" data-scene >
-  <div class="container">
+<footer id="contactUs" data-scene> 
+  <div class="container" >
     <div class="f1">
       <h4 id="logo">...Beans</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, debitis fugit animi aliquid minima suscipit. Eius, nam. 
@@ -298,11 +307,11 @@
       </ul>
     </div>
   </div>
-  <div class="copyright"  data-aos-offset="0">
+  <div class="copyright">
     <small>© 2022 ...Beans Inc. All rights reserved.</small>
   </div>
 </footer>
-</div>
+</main>
 <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
