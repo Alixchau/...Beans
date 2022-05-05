@@ -1,7 +1,8 @@
 const r = rolly({
   view: document.querySelector('.app'),
   native: true,
-  // other options
+  autoUpdate:true,
+  noScrollBar: true,
 });
 r.init();
 
@@ -19,10 +20,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 //open & close nav menu
-const menuBtn = document.querySelector("#menuBtn");
-const closeBtn = document.getElementById("closeBtn");
 const menu = document.querySelector("nav .container ul");
-
 const burger = document.querySelector(".burger");
 const navItems = document.querySelectorAll("nav ul li");
 const navLink = document.querySelectorAll("nav ul li a");
@@ -40,11 +38,18 @@ burger.addEventListener("click",()=>{
   });
   //animate burger 
   burger.classList.toggle("toggle");
+
 });
-//close menu when click the links
-navLink.forEach(link => link.addEventListener("click",()=>{
-  menu.classList.remove("navActive");
-}))
+  //close menu when click the links
+  navLink.forEach(link => link.addEventListener("click",()=>{
+    menu.classList.toggle("navActive");
+    burger.classList.toggle("toggle");
+    //resume navItem animation to none
+    navItems.forEach((link, index) =>{
+        link.style.animation="";
+  })
+})
+)
 
 
 //remove active class from other items
