@@ -5,22 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>...Beans</title>
-  <link rel="stylesheet" href="styles.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
-
+<!-- Rolly -->
+<link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
+<!-- AOS CDN -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- Swiper JS CDN -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
+  <div class="app">
   <nav id="nav">
-    <div class="container">
+    <div class="container" >
       <a href="index.html" id="logo">...Beans</a>
 
       <ul>
@@ -42,15 +43,15 @@
   </nav>
 
   <header>
-  <div class="container">
-    <div class="headerItem">
+  <div class="container" data-scene>
+    <div class="headerItem" data-aos="zoom-out-right">
       <div class="info">
         <h1>100% Ethically Sourced and Rainforest Alliance Certified.</h1>
         <p>Find your ideal beans and be your own barista</p>
       </div>
     </div>
       <!-- image source: https://unsplash.com/photos/p3dGOGBFbP4 -->
-      <div class="headerItem">
+      <div class="headerItem"  data-aos="zoom-out-left">
       <div class="headerImage">
       <img src="./images/craig-mckay-p3dGOGBFbP4-unsplash.jpg" alt="header image">
     </div>
@@ -59,22 +60,22 @@
 </header>
 
 <!--video source: https://www.videezy.com/abstract/37927-brown-roasted-coffee-beans-falling-on-pile -->
-<div class="container section video">
-  <h2>Our products</h2>
-  <p>Have a look at our products and discover your next favourite beans! </p>
-  <video controls>
+<div class="container section video" data-scene >
+  <h2 data-aos="zoom-out-down">Our products</h2>
+  <p data-aos="zoom-out-down">Have a look at our products and discover your next favourite beans! </p>
+  <video controls data-aos="fade-up">
     <source src="https://user-images.githubusercontent.com/86642948/166808237-65ad27c1-b88d-476d-bc4a-30686b4f70a7.mp4" type="video/mp4"> 
   </video>
 </div>
 
 <!-- image source https://unsplash.com/photos/ISFopTz7sBo-->
-<div id="products">
+<div id="products" data-scene>
   <div class="container section product">
-    <div class="productInfo">
+    <div class="productInfo" data-aos="zoom-out-right">
     <h3>Arabica Beans</h3>
     <p>If you sample the coffee on your front palate – where sweetness and salinity are found – you get a better taste in your mouth, and Arabica bean coffee is always better tasting when you serve it hot or with a pour-over or drip coffee maker.</p>
     </div>
-    <div class="imgAndCart">
+    <div class="imgAndCart" data-aos="zoom-out-left">
       <img src="./images/merlene-goulet-ISFopTz7sBo-unsplash.jpg" alt="arabica">
     <div class="weightSelect">
       <p>Weight</p>
@@ -87,11 +88,11 @@
   </div>
 <!-- image source  https://unsplash.com/photos/pVCiKrYz758-->
   <div class="container section product">
-    <div class="productInfo">
+    <div class="productInfo"  data-aos="zoom-out-right">
     <h3>Maragogype Beans</h3>
     <p>This type of coffee bean grows in Brazil and it is very large in size, which is one of the reasons they are sometimes called Elephant Bean coffee beans. It has a rather heavy and buttery flavor with hints of citrus and floral undertones.</p>
   </div>    
-  <div class="imgAndCart">
+  <div class="imgAndCart" data-aos="zoom-out-left">
     <img src="./images/tammy-gann-pVCiKrYz758-unsplash.jpg" alt="arabica">
     <div class="weightSelect">
       <p>Weight</p>
@@ -104,11 +105,11 @@
   </div>
        <!-- image source https://unsplash.com/photos/qLFJ0uCF9oY -->
   <div class="container section product">
-    <div class="productInfo">
+    <div class="productInfo"  data-aos="zoom-out-right">
     <h3>Robusta Beans</h3>
     <p>If you’re looking for a coffee that goes great with cream and sugar and tastes good even when it’s iced, the Robusta coffee beans are worth trying. They are the second most popular type of bean when producing coffee, and the trees are practically immune from any type of disease.</p>
      </div>
-     <div class="imgAndCart">
+     <div class="imgAndCart" data-aos="zoom-out-left">
 
     <img src="./images/jannis-brandt-qLFJ0uCF9oY-unsplash.jpg" alt="arabica">
     <div class="weightSelect">
@@ -123,57 +124,60 @@
 </div>
 
 <!-- Testimonial section-->
-<h2 class="testimonial-section-header">Testimonial</h2>
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <div class="image">
-       <!-- image source https://www.pexels.com/zh-tw/photo/774909/ -->
-        <img src="./images/testimonialProfile1.jpeg"/>
+<div data-scene>
+  <h2 class="testimonial-section-header" data-aos="zoom-out-down">Testimonial</h2>
+  <div class="swiper"  data-aos="fade-up">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="image">
+         <!-- image source https://www.pexels.com/zh-tw/photo/774909/ -->
+          <img src="./images/testimonialProfile1.jpeg"/>
+        </div>
+        <div class="details">
+          <h3>For product: Arabica Beans</h3>
+          <h4>Its complexity and delicacy of flavors will get you hooked!</h4>
+          <p>Pleasant slight touch of bitterness. We truly recommend this carefully selected and roasted coffee with love.</p>
+          <h5>Annie Walker</h5>
+        </div>
       </div>
-      <div class="details">
-        <h3>For product: Arabica Beans</h3>
-        <h4>Its complexity and delicacy of flavors will get you hooked!</h4>
-        <p>Pleasant slight touch of bitterness. We truly recommend this carefully selected and roasted coffee with love.</p>
-        <h5>Annie Walker</h5>
+     
+      <div class="swiper-slide">
+        <div class="image">
+          <!-- image source https://www.pexels.com/zh-tw/photo/3785079/-->
+          <img src="./images/testimonialProfile2.jpg"/>
+        </div>
+        <div class="details">
+          <h3>For product: Maragogype Beans</h3>
+          <h4>The taste has more character and depth than the usual coffee</h4>
+          <p>Extrodinary aftertaste of roasty aroma. I find it to be my most favourite coffee once I tired. Highly recommend!</p>
+          <h5>Danny Piacquadio</h5>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image">
+          <!-- img srouce https://www.pexels.com/zh-tw/photo/220453/ -->
+          <img src="./images/testimonialProfile3.jpg"/>
+        </div>
+        <div class="details">
+          <h3>For product: Robusta Beans</h3>
+          <h4>I have just discovered this now I can not seem to get enough </h4>
+          <p>It is better than any top brand, and we are coffee lovers. Thank you for such a quality coffee. Nothing holds a candle close to your brand.</p>
+          <h5>John Cowley</h5>
+        </div>
       </div>
     </div>
-   
-    <div class="swiper-slide">
-      <div class="image">
-        <!-- image source https://www.pexels.com/zh-tw/photo/3785079/-->
-        <img src="./images/testimonialProfile2.jpg"/>
-      </div>
-      <div class="details">
-        <h3>For product: Maragogype Beans</h3>
-        <h4>The taste has more character and depth than the usual coffee</h4>
-        <p>Extrodinary aftertaste of roasty aroma. I find it to be my most favourite coffee once I tired. Highly recommend!</p>
-        <h5>Danny Piacquadio</h5>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="image">
-        <!-- img srouce https://www.pexels.com/zh-tw/photo/220453/ -->
-        <img src="./images/testimonialProfile3.jpg"/>
-      </div>
-      <div class="details">
-        <h3>For product: Robusta Beans</h3>
-        <h4>I have just discovered this now I can not seem to get enough </h4>
-        <p>It is better than any top brand, and we are coffee lovers. Thank you for such a quality coffee. Nothing holds a candle close to your brand.</p>
-        <h5>John Cowley</h5>
-      </div>
-    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+  
 </div>
 
 <!-- FAQ section -->
-<div id="faqs">
+<div id="faqs" data-scene>
   <div class="container">
-    <h2>Frequently Asked Questions</h2>
-    <div class="content">
+    <h2 data-aos="zoom-out-down">Frequently Asked Questions</h2>
+    <div class="content" data-aos="fade-up">
       <article>
         <div class="icon"></div>
         <div class="detail">
@@ -227,7 +231,7 @@
 
 <!-- Footer section -->
 
-<footer id="contactUs">
+<footer id="contactUs" data-scene >
   <div class="container">
     <div class="f1">
       <h4 id="logo">...Beans</h4>
@@ -271,11 +275,19 @@
       </ul>
     </div>
   </div>
-  <div class="copyright">
+  <div class="copyright"  data-aos-offset="0">
     <small>© 2022 ...Beans Inc. All rights reserved.</small>
   </div>
 </footer>
+</div>
+<script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="./index.js"></script>
+<script>
+
+
+</script>
+
 </body>
 </html>

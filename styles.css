@@ -20,7 +20,9 @@
   list-style: none;
   box-sizing: border-box;
 }
-
+.app{
+  background: transparent;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -42,6 +44,7 @@ body {
 .active{
   border-bottom: 3px solid var(--primary-color);  
 }
+
 h1,
 h2,
 h3,
@@ -176,7 +179,7 @@ header .headerItem img {
 /* video section*/
 .container.section.video {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
 
 .container.section.video h2,
@@ -269,7 +272,7 @@ video {
 /* Testimonial section */
 .testimonial-section-header{
   text-align: center;
-  margin: 6rem 0 5rem;
+  margin: 7rem 0 5rem;
 }
 .swiper{
   width: var(--width);
@@ -305,7 +308,7 @@ video {
 /* FAQ section */
 #faqs h2{
   text-align: center;
-  margin: 5rem 0;
+  margin: 7rem 0;
 }
 
 #faqs .content{
