@@ -175,11 +175,45 @@ header .headerItem img {
   height: auto;
   margin: 20px 30px 10px 10px;
 }
+/* features section */
 
+.features {
+  margin-top: 16rem;
+  width: var(--width);
+  display: grid;
+  grid-template-columns: 1fr 1fr  1fr 1fr;
+  align-items: center;
+  padding: 1rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.featureIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.featureTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px;
+  color: var(--color-dark);
+}
+
+.featureDesc {
+  color: gray;
+  width: 50%;
+  height: 100px;
+}
 /* video section*/
 .container.section.video {
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 3rem;
 }
 
 .container.section.video h2,
