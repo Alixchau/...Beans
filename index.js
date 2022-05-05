@@ -46,21 +46,6 @@ navLink.forEach(link => link.addEventListener("click",()=>{
   menu.classList.remove("navActive");
 }))
 
-//open sidebar
-/* menuBtn.addEventListener("click", ()=>{
-  menu.style.display = "block";
-  menuBtn.style.display = "none";
-  closeBtn.style.display = "inline-block";
-}); */
-//close sidebar
-/* closeBtn.addEventListener("click", ()=>{
-  menu.style.display = "none";
-  menuBtn.style.display = "inline-block";
-  closeBtn.style.display = "none";
-}); */
-
-//change active class when clicked on nav item
-
 
 //remove active class from other items
 const removeActiveClass = () =>{
@@ -84,6 +69,7 @@ const faqs = document.querySelectorAll("#faqs article");
 faqs.forEach(faq =>{
   faq.addEventListener("click", ()=>{
     faq.classList.toggle("expand");
+
       //toggle icon "+" "-"
     faq.classList.toggle("openFaq");
   })

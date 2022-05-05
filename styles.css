@@ -125,13 +125,7 @@ nav .navIcons {
 nav .navIcon {
   padding: 7px;
 }
-/* .checkBtn{
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: block;
-} */
+
 .burger div{
   width: 20px;
   height: 2px;
@@ -418,6 +412,7 @@ footer{
   padding-top: 5rem;
   font-size: 0.7rem;
   color: var(--color-dark);
+
 }
 
 footer .container{
@@ -425,6 +420,7 @@ footer .container{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 5rem;
   justify-content: space-between;
+  position: relative;
 }
 
 footer .container p, ul{
@@ -529,12 +525,7 @@ footer .copyright{
     margin-left: 2rem;
 
   }
-/*   .checkBtn{
-    display: block;
-  } */
-/*   body{
-    overflow-x: hidden;
-  } */
+
   nav .container ul{
     position: absolute;
     top: 3rem;
@@ -604,15 +595,6 @@ footer .copyright{
     width: 35px;
     margin-right: 2.5rem;
   }
-/*   nav button{
-    display: inline-block;
-    cursor: pointer;
-    background: transparent;
-    margin-right: 2rem;
-  }
-  nav button#closeBtn{
-    display: none;
-  } */
 
   .swiper-slide img {
     margin-left: 5rem;
@@ -725,15 +707,5 @@ footer .copyright{
     }
     footer .socialMedia{
       justify-content: center;
-    }
-  }
-
-  @keyframes navOpen {
-    from{
-     right: 0px;
-    }
-    to{
-
-      right: -100%;
     }
   }
