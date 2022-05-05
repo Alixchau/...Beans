@@ -199,7 +199,7 @@ header .headerItem img {
 }
 
 .featureTitle {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   margin: 20px;
   color: var(--color-dark);
@@ -207,6 +207,7 @@ header .headerItem img {
 
 .featureDesc {
   color: gray;
+  font-size: 13px;
   width: 50%;
   height: 100px;
 }
@@ -605,6 +606,14 @@ footer .copyright{
      /* Header */
     header .headerItem {
       top: 5rem;
+    }
+    /* Feature */
+    
+    .features {
+      margin-top: 7rem;
+
+      grid-template-columns: 1fr;
+      align-items: center;
     }
     /* Video */
     .container.section.video {
